@@ -1,3 +1,5 @@
 #!/bin/bash
 
-pip-2.7 -E env install -r dependencies.txt --upgrade
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt --upgrade
